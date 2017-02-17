@@ -17,7 +17,7 @@ import scala.util.Random
  * sbt 'project performance' 'jmh:run -i 20 -wi 20 -f5 .*SeqOrList.*'
  */
 @State(Scope.Benchmark)
-class SeqOrList {
+class ConstructSeq {
   var NUM: Int = _
   val targets: Seq[Int] = 1 to NUM
 
